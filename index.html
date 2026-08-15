@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sergio Guzman — Desarrollador Web en formación</title>
+<meta name="description" content="Portafolio de Sergio Guzman, desarrollador web en formación. Sobre mí, filosofía de aprendizaje, habilidades, proyectos y contacto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+<!-- ===== NAV ===== -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#inicio" class="navbar__brand" data-cursor="hover">
+      <span class="navbar__mark">SG</span>
+      <span class="navbar__brandtext">Sergio Guzman</span>
+    </a>
+
+    <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav aria-label="Principal">
+      <ul class="navbar__list" id="navList">
+        <li><a href="#inicio" class="navlink" data-index="00">Inicio</a></li>
+        <li><a href="#sobre-mi" class="navlink" data-index="01">Sobre mí</a></li>
+        <li><a href="#filosofia" class="navlink" data-index="02">Filosofía</a></li>
+        <li><a href="#aprendizaje" class="navlink" data-index="03">Aprendizaje</a></li>
+        <li><a href="#habilidades" class="navlink" data-index="04">Habilidades</a></li>
+        <li><a href="#proyectos" class="navlink" data-index="05">Proyectos</a></li>
+        <li><a href="#preguntas" class="navlink" data-index="06">FAQ</a></li>
+        <li><a href="#contacto" class="navlink navlink--cta" data-index="07">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="navbar__ruler" aria-hidden="true"></div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="hero">
+    <div class="grid-field" aria-hidden="true"></div>
+    <div class="blob blob--one" aria-hidden="true"></div>
+    <div class="blob blob--two" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+
+      <div class="hero__col">
+        <p class="tagblock">
+          <span class="tagblock__num">FIG. 01</span>
+          <span class="tagblock__line" aria-hidden="true"></span>
+          desarrollador web · en formación
+        </p>
+
+        <h1 class="hero__title">
+          Sergio<br>
+          <span class="hero__title-gradient">Guzman</span>
+        </h1>
+
+        <p class="hero__desc" id="typedLine" aria-live="polite"></p>
+
+        <p class="hero__paragraph">
+          Este es el lugar donde documento mi proceso: lo que aprendo, lo que construyo
+          y lo que todavía me falta por descubrir. No es el portafolio de un experto,
+          es el registro honesto de alguien que está aprendiendo a programar en voz alta.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#proyectos" class="btn btn--fill" data-cursor="hover">
+            <span class="btn__label">Conoce mi trabajo</span>
+            <span class="btn__icon" aria-hidden="true">→</span>
+          </a>
+          <a href="#contacto" class="btn btn--line" data-cursor="hover">
+            <span class="btn__label">Contactarme</span>
+            <span class="btn__icon" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <dl class="specs">
+          <div class="specs__row">
+            <dt>Estado</dt><dd>En formación activa</dd>
+          </div>
+          <div class="specs__row">
+            <dt>Enfoque</dt><dd>Programación · Desarrollo Web · Servidores</dd>
+          </div>
+          <div class="specs__row">
+            <dt>Disponibilidad</dt><dd>Abierta a proyectos y prácticas</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero__col hero__col--art" aria-hidden="true">
+        <svg class="blueprint-art" viewBox="0 0 420 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="70" y="60" width="280" height="190" rx="6" stroke="url(#gradLine)" stroke-width="2"/>
+          <rect x="90" y="80" width="240" height="150" rx="2" stroke="var(--sky)" stroke-width="1.4" stroke-dasharray="4 4"/>
+          <path d="M110 105H210" stroke="url(#gradLine)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M110 125H260" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+          <path d="M110 145H180" stroke="var(--indigo)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M110 165H230" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+          <path d="M110 185H150" stroke="var(--sky)" stroke-width="2.2" stroke-linecap="round"/>
+          <rect x="185" y="250" width="40" height="22" stroke="var(--ink)" stroke-width="2"/>
+          <path d="M150 272H270" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M70 280V295" stroke="var(--ink)" stroke-width="1"/>
+          <path d="M350 280V295" stroke="var(--ink)" stroke-width="1"/>
+          <path d="M70 288H350" stroke="var(--ink)" stroke-width="1"/>
+          <text x="195" y="305" class="dim-label">280 mm</text>
+          <circle cx="60" cy="330" r="4" stroke="var(--indigo)" stroke-width="1.8" class="pulse-node"/>
+          <circle cx="360" cy="60" r="4" stroke="var(--sky)" stroke-width="1.8" class="pulse-node"/>
+          <circle cx="30" cy="120" r="3" fill="var(--cyan)"/>
+          <path d="M60 330L92 300" stroke="var(--indigo)" stroke-width="1.2" stroke-dasharray="3 4"/>
+          <path d="M360 60L340 78" stroke="var(--sky)" stroke-width="1.2" stroke-dasharray="3 4"/>
+          <text x="14" y="345" class="dim-label">&lt;/&gt;</text>
+          <defs>
+            <linearGradient id="gradLine" x1="70" y1="60" x2="350" y2="250" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="var(--sky)"/>
+              <stop offset="1" stop-color="var(--indigo)"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+    </div>
+
+    <div class="titleblock">
+      <span>PROYECTO<strong>Portafolio — Sergio Guzman</strong></span>
+      <span>HOJA<strong>01 / 08</strong></span>
+      <span>ESTADO<strong>En construcción</strong></span>
+      <span>ESCALA<strong>1 : 1</strong></span>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>APRENDIENDO</span><span>·</span><span>CONSTRUYENDO</span><span>·</span>
+      <span>PROGRAMACIÓN</span><span>·</span><span>DESARROLLO WEB</span><span>·</span>
+      <span>SERVIDORES</span><span>·</span><span>UN PROYECTO A LA VEZ</span><span>·</span>
+      <span>APRENDIENDO</span><span>·</span><span>CONSTRUYENDO</span><span>·</span>
+      <span>PROGRAMACIÓN</span><span>·</span><span>DESARROLLO WEB</span><span>·</span>
+      <span>SERVIDORES</span><span>·</span><span>UN PROYECTO A LA VEZ</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ===== SOBRE MÍ ===== -->
+  <section id="sobre-mi" class="section">
+    <div class="section__inner section__inner--split">
+
+      <div class="reveal">
+        <p class="eyebrow"><span>01</span>Sobre mí</p>
+        <h2 class="section__title">Perfil profesional</h2>
+        <p class="lede">
+          Soy Sergio Guzman, estudiante y apasionado por el desarrollo web. Actualmente
+          estoy fortaleciendo mis conocimientos en programación y en la construcción de
+          aplicaciones y sitios web, avanzando paso a paso a través de la práctica constante.
+        </p>
+        <p class="lede">
+          Cada línea de código que escribo es parte de un proceso de aprendizaje activo:
+          entender cómo funcionan las páginas web, cómo se comunican con los servidores
+          y cómo convertir una idea en algo funcional. Me interesa seguir creciendo en el
+          área tecnológica y sumar experiencia real a través de proyectos prácticos.
+        </p>
+        <p class="lede">
+          No vengo de años de experiencia ni de un currículo extenso: vengo de la curiosidad
+          y de la disciplina de sentarme, equivocarme y volver a intentarlo. Creo que esa es,
+          precisamente, la mejor forma de construir bases sólidas como desarrollador.
+        </p>
+      </div>
+
+      <figure class="sheet tilt reveal">
+        <figcaption class="sheet__tab">Ficha 01 — Perfil</figcaption>
+        <dl class="sheet__list">
+          <div><dt>Nombre</dt><dd>Sergio Guzman</dd></div>
+          <div><dt>Rol</dt><dd>Desarrollador Web en formación</dd></div>
+          <div><dt>Método</dt><dd>Aprender construyendo</dd></div>
+          <div><dt>Objetivo</dt><dd>Crecer en el área tecnológica</dd></div>
+          <div><dt>Actitud</dt><dd>Constancia sobre perfección</dd></div>
+        </dl>
+        <span class="sheet__corner sheet__corner--tl" aria-hidden="true"></span>
+        <span class="sheet__corner sheet__corner--br" aria-hidden="true"></span>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ===== FILOSOFÍA / CÓMO APRENDO ===== -->
+  <section id="filosofia" class="section section--wash">
+    <div class="section__inner">
+      <p class="eyebrow"><span>02</span>Filosofía</p>
+      <h2 class="section__title">Cómo aprendo</h2>
+      <p class="section__subtitle">
+        Cuatro ideas que guían la forma en la que estudio, practico y me acerco al desarrollo web.
+      </p>
+
+      <div class="principle-grid">
+        <article class="principle reveal">
+          <span class="principle__num">01</span>
+          <h3>Práctica constante</h3>
+          <p>Prefiero construir algo pequeño todos los días que estudiar teoría sin aplicarla nunca.</p>
+        </article>
+        <article class="principle reveal">
+          <span class="principle__num">02</span>
+          <h3>Curiosidad activa</h3>
+          <p>Cuando algo funciona, también quiero entender por qué funciona y qué hay detrás.</p>
+        </article>
+        <article class="principle reveal">
+          <span class="principle__num">03</span>
+          <h3>El error como guía</h3>
+          <p>Cada bug es información. Aprendo más depurando un error que leyendo sin equivocarme.</p>
+        </article>
+        <article class="principle reveal">
+          <span class="principle__num">04</span>
+          <h3>Documentar el proceso</h3>
+          <p>Registrar lo que aprendo —como en este portafolio— me ayuda a fijarlo y a medir mi avance.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APRENDIZAJE ===== -->
+  <section id="aprendizaje" class="section">
+    <div class="section__inner">
+      <p class="eyebrow"><span>03</span>Aprendizaje</p>
+      <h2 class="section__title">Actualmente aprendiendo</h2>
+      <p class="section__subtitle">
+        Áreas en las que estoy invirtiendo tiempo y práctica en este momento, con lo que representa cada una para mí.
+      </p>
+
+      <div class="sheet-grid">
+        <article class="sheet tilt reveal">
+          <figcaption class="sheet__tab">Módulo 01</figcaption>
+          <div class="sheet__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 7L3 12L8 17" stroke="var(--ink)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 7L21 12L16 17" stroke="var(--ink)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 4.5L10.5 19.5" stroke="var(--sky)" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Programación</h3>
+          <p>Fortaleciendo lógica de programación y las bases que sostienen cualquier proyecto de software: variables, condicionales, ciclos y estructuras de datos simples.</p>
+          <span class="sheet__status">en curso</span>
+          <span class="sheet__corner sheet__corner--tl" aria-hidden="true"></span>
+          <span class="sheet__corner sheet__corner--br" aria-hidden="true"></span>
+        </article>
+
+        <article class="sheet tilt reveal">
+          <figcaption class="sheet__tab">Módulo 02</figcaption>
+          <div class="sheet__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="13" rx="1.5" stroke="var(--ink)" stroke-width="1.6"/><path d="M8 21H16" stroke="var(--ink)" stroke-width="1.6" stroke-linecap="round"/><path d="M12 17V21" stroke="var(--indigo)" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Desarrollo Web</h3>
+          <p>Aprendiendo a estructurar, diseñar y dar vida a páginas y aplicaciones web funcionales, cuidando tanto la parte visual como la organización del código.</p>
+          <span class="sheet__status">en curso</span>
+          <span class="sheet__corner sheet__corner--tl" aria-hidden="true"></span>
+          <span class="sheet__corner sheet__corner--br" aria-hidden="true"></span>
+        </article>
+
+        <article class="sheet tilt reveal">
+          <figcaption class="sheet__tab">Módulo 03</figcaption>
+          <div class="sheet__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="6" rx="1.3" stroke="var(--ink)" stroke-width="1.6"/><rect x="4" y="15" width="16" height="6" rx="1.3" stroke="var(--ink)" stroke-width="1.6"/><circle cx="7.5" cy="6" r="0.9" fill="var(--sky)"/><circle cx="7.5" cy="18" r="0.9" fill="var(--indigo)"/></svg>
+          </div>
+          <h3>Servidores Web</h3>
+          <p>Explorando el funcionamiento de los servidores, cómo procesan peticiones y los conceptos básicos detrás del despliegue de un sitio web.</p>
+          <span class="sheet__status">en curso</span>
+          <span class="sheet__corner sheet__corner--tl" aria-hidden="true"></span>
+          <span class="sheet__corner sheet__corner--br" aria-hidden="true"></span>
+        </article>
+      </div>
+
+      <!-- ===== CONTADORES ===== -->
+      <div class="stats reveal">
+        <div class="stats__item">
+          <span class="stats__num" data-count="3">0</span>
+          <span class="stats__label">áreas en formación</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__num" data-count="2">0</span>
+          <span class="stats__label">proyectos en desarrollo</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__num" data-count="4">0</span>
+          <span class="stats__label">principios de aprendizaje</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__num" data-count="100">0</span>
+          <span class="stats__label">% de ganas de seguir creciendo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HABILIDADES ===== -->
+  <section id="habilidades" class="section section--wash">
+    <div class="section__inner">
+      <p class="eyebrow"><span>04</span>Habilidades</p>
+      <h2 class="section__title">Habilidades</h2>
+      <p class="section__subtitle">Conocimientos que ya manejo y sobre los que sigo construyendo, con lo que estoy haciendo para reforzarlos.</p>
+
+      <div class="skill-list">
+        <article class="skill-row reveal">
+          <span class="skill-row__num">01</span>
+          <div class="skill-row__body">
+            <h3>Desarrollo Web</h3>
+            <p>Bases de HTML, CSS y los conceptos generales que dan forma a un sitio web: estructura semántica, maquetación y diseño adaptable.</p>
+            <div class="tag-row">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Estructura Web</span>
+              <span class="tag">Diseño adaptable</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="skill-row reveal">
+          <span class="skill-row__num">02</span>
+          <div class="skill-row__body">
+            <h3>Programación</h3>
+            <p>Fundamentos de programación, lógica y resolución de problemas paso a paso, aplicados en pequeños ejercicios prácticos.</p>
+            <div class="tag-row">
+              <span class="tag">Lógica</span>
+              <span class="tag">Fundamentos</span>
+              <span class="tag">Buenas prácticas</span>
+              <span class="tag">Resolución de problemas</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="skill-row reveal">
+          <span class="skill-row__num">03</span>
+          <div class="skill-row__body">
+            <h3>Servidores Web</h3>
+            <p>Conceptos básicos sobre cómo funcionan los servidores, cómo se comunican con el navegador y el proceso general de despliegue web.</p>
+            <div class="tag-row">
+              <span class="tag">Conceptos</span>
+              <span class="tag">Despliegue</span>
+              <span class="tag">Funcionamiento</span>
+              <span class="tag">Comunicación cliente-servidor</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS ===== -->
+  <section id="proyectos" class="section">
+    <div class="section__inner">
+      <p class="eyebrow"><span>05</span>Proyectos</p>
+      <h2 class="section__title">Proyectos</h2>
+      <p class="section__subtitle">Prácticas y proyectos de aprendizaje en los que he ido aplicando lo que estudio, con el proceso detrás de cada uno.</p>
+
+      <div class="sheet-grid sheet-grid--projects">
+
+        <article class="sheet tilt project reveal">
+          <figcaption class="sheet__tab">Ficha 02</figcaption>
+          <div class="project__body">
+            <h3>Proyecto académico 01</h3>
+            <p>Práctica de desarrollo web enfocada en estructurar y maquetar una página desde cero, cuidando el orden del código y la jerarquía visual.</p>
+            <ul class="mini-steps">
+              <li>Planeación de la estructura HTML</li>
+              <li>Maquetación y estilos con CSS</li>
+              <li>Ajustes de diseño adaptable</li>
+            </ul>
+            <div class="tag-row tag-row--outline">
+              <span class="tag tag--outline">HTML</span>
+              <span class="tag tag--outline">CSS</span>
+            </div>
+          </div>
+          <div class="project__foot">
+            <span>SG-P01 · en desarrollo</span>
+            <div class="project__actions">
+              <button class="btn btn--small btn--pending" disabled data-cursor="hover">Ver proyecto</button>
+              <button class="btn btn--small btn--pending btn--line" disabled data-cursor="hover">Código</button>
+            </div>
+          </div>
+          <span class="sheet__corner sheet__corner--tl" aria-hidden="true"></span>
+          <span class="sheet__corner sheet__corner--br" aria-hidden="true"></span>
+        </article>
+
+        <article class="sheet tilt project reveal">
+          <figcaption class="sheet__tab">Ficha 03</figcaption>
+          <div class="project__body">
+            <h3>Proyecto académico 02</h3>
+            <p>Ejercicio práctico orientado a fortalecer lógica de programación y buenas prácticas de código a través de pequeños retos.</p>
+            <ul class="mini-steps">
+              <li>Definición del problema a resolver</li>
+              <li>Diseño de la lógica paso a paso</li>
+              <li>Pruebas y corrección de errores</li>
+            </ul>
+            <div class="tag-row tag-row--outline">
+              <span class="tag tag--outline">Programación</span>
+            </div>
+          </div>
+          <div class="project__foot">
+            <span>SG-P02 · en desarrollo</span>
+            <div class="project__actions">
+              <button class="btn btn--small btn--pending" disabled data-cursor="hover">Ver proyecto</button>
+              <button class="btn btn--small btn--pending btn--line" disabled data-cursor="hover">Código</button>
+            </div>
+          </div>
+          <span class="sheet__corner sheet__corner--tl" aria-hidden="true"></span>
+          <span class="sheet__corner sheet__corner--br" aria-hidden="true"></span>
+        </article>
+
+        <article class="sheet project project--empty reveal">
+          <div class="project__empty">
+            <div class="plus">+</div>
+            <h3>Próximo proyecto</h3>
+            <p>Espacio preparado para el siguiente proyecto en camino. Vuelve pronto para ver qué sigue.</p>
+          </div>
+          <span class="sheet__corner sheet__corner--tl" aria-hidden="true"></span>
+          <span class="sheet__corner sheet__corner--br" aria-hidden="true"></span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PREGUNTAS FRECUENTES ===== -->
+  <section id="preguntas" class="section section--wash">
+    <div class="section__inner section__inner--narrow">
+      <p class="eyebrow"><span>06</span>FAQ</p>
+      <h2 class="section__title">Preguntas frecuentes</h2>
+      <p class="section__subtitle">Algunas respuestas rápidas antes de que me escribas.</p>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-item__q" data-cursor="hover" aria-expanded="false">
+            <span>¿Estás disponible para proyectos o prácticas?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__a">
+            <p>Sí. Estoy abierto a proyectos pequeños, prácticas académicas o colaboraciones donde pueda seguir aprendiendo y aportar valor real.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__q" data-cursor="hover" aria-expanded="false">
+            <span>¿En qué te estás formando actualmente?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__a">
+            <p>Principalmente en programación, desarrollo web y conceptos básicos de servidores. Puedes ver el detalle en la sección "Aprendizaje".</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__q" data-cursor="hover" aria-expanded="false">
+            <span>¿Cómo puedo contactarte?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__a">
+            <p>Por correo electrónico o por teléfono/WhatsApp. Ambos datos están en la sección de contacto, al final de esta página.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-item__q" data-cursor="hover" aria-expanded="false">
+            <span>¿Vas a seguir actualizando este portafolio?</span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__a">
+            <p>Sí, la idea es que crezca conmigo: nuevos proyectos, nuevas habilidades y nuevos aprendizajes se irán sumando con el tiempo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto" class="section contact">
+    <div class="section__inner">
+      <p class="eyebrow"><span>07</span>Contacto</p>
+
+      <div class="contact-sheet tilt reveal">
+        <div class="contact-sheet__main">
+          <h2 class="section__title">Hablemos</h2>
+          <p class="lede">
+            Estoy abierto a nuevas oportunidades, colaboraciones y proyectos donde pueda
+            seguir aprendiendo y aportando. Si quieres conversar sobre una idea, una práctica
+            o simplemente saludar, aquí puedes encontrarme.
+          </p>
+          <a class="btn btn--fill btn--big" href="mailto:sguzman76@itfip.edu.co" data-cursor="hover">
+            <span class="btn__label">Escribir un correo</span>
+            <span class="btn__icon" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <ul class="leader-list">
+          <li>
+            <span class="leader-list__label">Correo electrónico</span>
+            <span class="leader-list__line" aria-hidden="true"></span>
+            <a class="leader-list__value leader-list__value--link" href="mailto:sguzman76@itfip.edu.co" data-cursor="hover">sguzman76@itfip.edu.co</a>
+            <button class="copy-btn" data-copy="sguzman76@itfip.edu.co" aria-label="Copiar correo electrónico" data-cursor="hover">Copiar</button>
+          </li>
+          <li>
+            <span class="leader-list__label">Teléfono / WhatsApp</span>
+            <span class="leader-list__line" aria-hidden="true"></span>
+            <a class="leader-list__value leader-list__value--link" href="tel:+573102770268" data-cursor="hover">+57 310 277 0268</a>
+            <button class="copy-btn" data-copy="+57 310 277 0268" aria-label="Copiar número de teléfono" data-cursor="hover">Copiar</button>
+          </li>
+          <li>
+            <span class="leader-list__label">GitHub</span>
+            <span class="leader-list__line" aria-hidden="true"></span>
+            <span class="leader-list__value">próximamente</span>
+          </li>
+          <li>
+            <span class="leader-list__label">LinkedIn</span>
+            <span class="leader-list__line" aria-hidden="true"></span>
+            <span class="leader-list__value">próximamente</span>
+          </li>
+        </ul>
+
+        <span class="sheet__corner sheet__corner--tl" aria-hidden="true"></span>
+        <span class="sheet__corner sheet__corner--br" aria-hidden="true"></span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="titleblock titleblock--footer">
+    <span>FIRMA<strong>Sergio Guzman</strong></span>
+    <span>ROL<strong>Desarrollador Web en formación</strong></span>
+    <span>HOJA<strong>08 / 08</strong></span>
+    <span>© <strong id="year"></strong></span>
+  </div>
+  <div class="footer__bottom">
+    <div class="footer__social" aria-label="Redes y contacto">
+      <a class="tag tag--outline" href="mailto:sguzman76@itfip.edu.co" data-cursor="hover">Correo</a>
+      <a class="tag tag--outline" href="tel:+573102770268" data-cursor="hover">Teléfono</a>
+      <span class="tag tag--outline">GitHub</span>
+      <span class="tag tag--outline">LinkedIn</span>
+    </div>
+    <p class="footer__note">Hecho a mano, aprendiendo en cada línea de código.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Copiado al portapapeles</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
